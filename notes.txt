@@ -27,6 +27,9 @@ The reason why we added @article = Article.new in the ArticlesController is that
 10) Updating Articles
 It is not necessary to pass all the attributes to update. For example, if @article.update(title: 'A new title') was called, Rails would only update the title attribute, leaving all other attributes untouched.
 
+11) Using partials to clean up duplication in views
+
+12) Deleting Articles
 **************************
 
 Migrations are Ruby classes that are designed to make it simple to create and modify database tables. Rails uses rake commands to run migrations, and it's possible to undo a migration after it's been applied to your database.
