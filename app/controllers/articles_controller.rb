@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
   end
 
 
+
   # http://localhost:3000/articles/2
   def show
     # We also use an instance variable (prefixed with @) to hold a reference to the article object.
@@ -18,6 +19,11 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
 
+  # http://localhost:3000/articles/1/edit
+  def edit
+    # passed object to form to show old data
+    @article = Article.find(params[:id])
+  end
 
   # def create
   #   # render plain: params[:article].inspect
@@ -34,6 +40,17 @@ class ArticlesController < ApplicationController
       redirect_to @article  #  redirect to the show method
     else
       render 'new'
+    end
+  end
+
+
+  def update
+    @article = Article.find(params[:id])
+
+    if @article.update(article_params)
+      redirect_to @article
+    else
+      render 'edit'
     end
   end
 
