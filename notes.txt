@@ -2,3 +2,32 @@
 
 $ rails new blg
 $ generate controller Welcome index
+
+1) resources :articles
+
+2) rails generate controller Articles
+  -> now create action new and its view( html file)
+
+3) create form in new.html.erb
+
+4) make create method to get post request
+
+5) create article model (  Models in Rails use a singular name, and their corresponding database tables use a plural name. )
+  rails generate model Article title:string text:text
+  rails db:migrate
+
+6) showing article ( show method )
+7) Listing article ( index method )
+
+8) adding links to pages
+
+9) add validations
+The reason why we added @article = Article.new in the ArticlesController is that otherwise @article would be nil in our view, and calling @article.errors.any? would throw an error.
+
+10)
+
+
+Migrations are Ruby classes that are designed to make it simple to create and modify database tables. Rails uses rake commands to run migrations, and it's possible to undo a migration after it's been applied to your database.
+
+
+A frequent practice is to place the standard CRUD actions in each controller in the following order: index, show, new, edit, create, update and destroy. You may use any order you choose,
