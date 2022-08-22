@@ -1,0 +1,4 @@
+
+
+$ rails new blg
+$ generate controller Welcome index
