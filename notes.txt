@@ -33,6 +33,10 @@ It is not necessary to pass all the attributes to update. For example, if @artic
 
 11)  Generate comment model
 rails generate model Comment commenter:string body:text article:references
+rails db:migrate
+
+12) Associating Models
+   add has many line ina article.db
 **************************
 
 Migrations are Ruby classes that are designed to make it simple to create and modify database tables. Rails uses rake commands to run migrations, and it's possible to undo a migration after it's been applied to your database.
