@@ -1,9 +1,29 @@
-<p>
+
+<span>
   <strong>Commenter:</strong>
   <%= comment.commenter %>
-</p>
+</span>
 
-<p>
+&nbsp;
+
+<span>
   <strong>Comment:</strong>
   <%= comment.body %>
-</p>
+</span>
+
+&nbsp;
+
+
+
+<!-- destroy link -->
+<!-- <p>
+  <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/articles/2/comments/2">Destroy Comment</a>
+</p>-->
+
+<span>
+  <%= link_to 'Destroy Comment', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</span>
+
+<br>
