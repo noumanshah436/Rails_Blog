@@ -48,5 +48,14 @@ A frequent practice is to place the standard CRUD actions in each controller in 
 
 https://github.com/noumanshah436/Rails_Blog
 
+****************
 
 $ rake routes -c articles
+
+
+****************
+
+
+redirect_to article_path(@article)
+
+will redirect to the show method ( http://localhost:3000/articles/2 )
