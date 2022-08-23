@@ -37,6 +37,14 @@ rails db:migrate
 
 12) Associating Models
    add has many line ina article.db
+
+13) adding route for comments
+14) complete comment section
+15) partail form comment
+16) delete  comment
+17) security
+
+
 **************************
 
 Migrations are Ruby classes that are designed to make it simple to create and modify database tables. Rails uses rake commands to run migrations, and it's possible to undo a migration after it's been applied to your database.
