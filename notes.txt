@@ -30,9 +30,19 @@ It is not necessary to pass all the attributes to update. For example, if @artic
 11) Using partials to clean up duplication in views
 
 12) Deleting Articles
+
+11)  Generate comment model
+rails generate model Comment commenter:string body:text article:references
 **************************
 
 Migrations are Ruby classes that are designed to make it simple to create and modify database tables. Rails uses rake commands to run migrations, and it's possible to undo a migration after it's been applied to your database.
 
 
 A frequent practice is to place the standard CRUD actions in each controller in the following order: index, show, new, edit, create, update and destroy. You may use any order you choose,
+
+
+
+https://github.com/noumanshah436/Rails_Blog
+
+
+$ rake routes -c articles
