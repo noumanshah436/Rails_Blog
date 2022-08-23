@@ -8,11 +8,14 @@
   <%= @article.text %>
 </p>
 
+<hr>
+
 <!-- ********************* -->
 
-<h2>Comments</h2>
+<h2>Comments:</h2>
 <!-- This will now render the partial in app/views/comments/_comment.html.erb once for each comment that is in the @article -->
 <%= render @article.comments %>
+<hr>
 
 <!-- rendering all comments manually -->
 <!-- <% @article.comments.each do |comment| %>
@@ -33,7 +36,7 @@
 <%= render 'comments/form' %>
 
 <!-- ********************* -->
-
 <br>
+<hr>
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>

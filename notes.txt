@@ -59,3 +59,8 @@ $ rake routes -c articles
 redirect_to article_path(@article)
 
 will redirect to the show method ( http://localhost:3000/articles/2 )
+
+******************
+
+Other authentication methods are available for Rails applications. Two popular authentication add-ons for Rails are the Devise rails engine and the Authlogic gem, along with a number of others.
+
