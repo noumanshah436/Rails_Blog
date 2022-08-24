@@ -58,8 +58,15 @@ https://github.com/noumanshah436/Rails_Blog
 
 ****************
 
-$ rake routes -c articles
+$ rake routes -c articles    (  see all routes of article )
 
+rails g  (  see all generators)
+
+rails -T ( see all available rails commands)
+
+
+To see where a bundled gem is installed:
+bundle info [gemname]
 
 ****************
 

@@ -1,0 +1,47 @@
+https://www.youtube.com/watch?v=l0E-D53gEL0
+
+asset pipeline is a system of managing our static assets
+asset pipelne also handle the preprocessing
+
+*****************
+
+//= require_tree .
+this will include all files in the current directory and sub_directory
+
+//= require_directory .
+only include the assets in the current directory ( not from the nested directory)
+
+//= require_directory ./public
+load only file present in the public directory
+
+*****************
+
+
+see assets directly on chrome
+http://localhost:3000/assets/jquery.js
+
+bundle info jquery-rails
+
+
+rails c
+Rails.application.config.assets.paths
+y _
+exit
+
+
+http://localhost:3000/?debug_assets=1
+and then view page source to see all the file incluede
+
+
+*******************
+
+if you have something like jquery plugin that is not maintained by you that will be in vaendor/javascript directory
+
+
+*******************
+
+rails s -e production
+
+************************
+
+https://guides.rubyonrails.org/v5.2/asset_pipeline.html#coding-links-to-assets

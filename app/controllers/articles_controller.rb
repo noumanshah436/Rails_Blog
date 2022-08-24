@@ -1,11 +1,10 @@
 class ArticlesController < ApplicationController
   http_basic_authenticate_with name: "nouman", password: "nouman", except: [:index, :show]
-  
+
   # http://localhost:3000/articles
   def index
     @articles = Article.all
   end
-
 
 
   # http://localhost:3000/articles/2

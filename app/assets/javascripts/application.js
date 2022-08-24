@@ -14,3 +14,12 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery
+
+
+
+$(document).ready( function(){
+
+  console.log("hello");
+
+});
