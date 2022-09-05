@@ -1,5 +1,5 @@
 <!-- form action="/articles/id/comments -->
-<%= form_with(model: [ @article, @article.comments.build ], class:"form", local: true) do |form| %>
+<%= form_with(model: [ @article, @article.comments.build ], class:"form", local: false) do |form| %>
   <p>
     <%= form.label :commenter %><br>
     <%= form.text_field :commenter %>

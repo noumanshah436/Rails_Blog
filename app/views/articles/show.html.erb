@@ -14,7 +14,10 @@
 
 <h2>Comments:</h2>
 <!-- This will now render the partial in app/views/comments/_comment.html.erb once for each comment that is in the @article -->
-<%= render @article.comments %>
+<div id="comments">
+  <%= render @article.comments %>
+</div>
+
 <hr>
 
 <!-- rendering all comments manually -->

@@ -29,3 +29,11 @@ ActiveRecord::Schema.define(version: 2022_08_23_055329) do
   end
 
 end
+
+
+
+# articles = Article.includes(:comments).limit(10)
+
+# articles.each do |article|
+#   puts article.comments.commenter
+# end

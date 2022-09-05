@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to @article  #  redirect to the show method
     else
-      render 'new'
+      render 'new'          # render with the name of the view
     end
   end
 
